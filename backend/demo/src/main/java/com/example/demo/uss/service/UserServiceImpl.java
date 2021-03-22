@@ -5,13 +5,9 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.uss.repository.UserRepositoryImpl;
 
-@Service
+import lombok.RequiredArgsConstructor;
+
+@Service @RequiredArgsConstructor 
 public abstract class UserServiceImpl implements UserService {
 	private final UserRepositoryImpl repo;
-	
-	@Autowired
-	public UserServiceImpl(UserRepositoryImpl repo) {
-		this.repo = repo;
-	}
-
 }
