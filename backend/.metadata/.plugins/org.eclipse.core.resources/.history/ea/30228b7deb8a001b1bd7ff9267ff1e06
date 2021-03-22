@@ -1,0 +1,44 @@
+package com.example.demo.cmm.util;
+
+import java.util.Arrays;
+import java.util.List;
+import static java.util.Collections.*;
+
+public class DummyGenerator {
+	
+	public String makeName() {
+		
+		return "";
+	}
+	
+	public String makeUsername() {
+		
+		return "";
+	}
+	
+	public String makeEmail() {
+		List<String> ls = Arrays.asList("@test.com","@gmail.com","@naver.com");
+		return "";
+	}
+	
+	public String makeBirthday() {
+		
+		return "";
+	}
+	
+	public String makeGender() {
+		List<String> arr = Arrays.asList("F","M");
+		shuffle(arr);
+		return arr.get(0);
+	}
+	
+	public String makeRegdate() {
+		List<String> year = Arrays.asList()
+		return "";
+	}
+	
+	public User makeUser() {
+		
+		return null;
+	}
+}

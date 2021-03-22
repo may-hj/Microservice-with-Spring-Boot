@@ -12,10 +12,10 @@ public class User {
 	@Column(name="user_no")
 	private long userNo;
 	
-	@Column(name="name")
+	@Column(name="userid")
 	private String userid;
 	
-	@Column(name="password")
+	@Column(name="passwd")
 	private String passwd;
 	
 	@Column(name="username")
@@ -24,13 +24,5 @@ public class User {
 	@Column(name="email")
 	private String email;
 	
-	@Column(name="birthday")
-	private String birthday;
-	
-	@Column(name="gender")
-	private String gender;
-	
-	@Column(name="regdate")
-	private String regdate;
 	
 }
