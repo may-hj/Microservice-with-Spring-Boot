@@ -1394,3 +1394,18 @@ Caused by: org.gradle.internal.metaobject.AbstractDynamicObject$CustomMessageMis
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 14:41:23.932
 !MESSAGE executing callback sts4.classpath.lGVsLtQL SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 15:30:24.784
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 15:30:24.801
+!MESSAGE classpath=369 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 15:30:24.815
+!MESSAGE buffering callback sts4.classpath.lGVsLtQL demo false 369
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 15:30:24.818
+!MESSAGE executing callback sts4.classpath.lGVsLtQL 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-22 15:30:24.835
+!MESSAGE executing callback sts4.classpath.lGVsLtQL SUCCESS [done]
