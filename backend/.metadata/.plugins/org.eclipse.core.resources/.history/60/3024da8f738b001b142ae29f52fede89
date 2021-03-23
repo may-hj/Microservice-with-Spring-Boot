@@ -62,51 +62,27 @@ public class DummyGenerator {
 		return email;
 	}
 	
+	public String makeBirthday() {
+		int date = rangeRandom.apply(1, 30);
+		int date2 = rangeRandom.apply(1, 31);
+		int date3 = rangeRandom.apply(1, 29);
+		int date4 = rangeRandom.apply(1, 28);
+		return "";
+	}
+	
 	public String makeGender() {
 		List<String> arr = Arrays.asList("F","M");
 		shuffle(arr);
 		return arr.get(0);
 	}
 	
-	/*********************************
-	 * Student Dummy Data Generator 
-	 * *******************************
-	 */
-	/**
-	 * 1970 ~ 2000 사이의 랜덤한 연도수 뽑기 
-	 * 
-	 * 윤년은 해당 연도를 4로 나눈 값이 0인 것을 의미한다. 
-	 * && 그중 100으로 나눈 값이 0인 것은 윤년에서 제외하나, 
-	 * || 400으로 나눈 값이 0인 것은 윤년으로 포함된다. 
-	 * 그 외의 나머지 연도는 평년이다.
-	 * */
-
-	public String myCalendar(int start, int end) {
-		int date = 0;
-		int date28 = rangeBelowRandom.apply(1,28);
-		int date29 = rangeBelowRandom.apply(1, 29);
-		int date30 = rangeBelowRandom.apply(1, 30);
-		int date31 = rangeBelowRandom.apply(1, 31);
-		int month = rangeBelowRandom.apply(1, 12);
-		int year = rangeBelowRandom.apply(start, end);
+	public String makeRegdate() {
 		
-		boolean leapYear = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
-		
-		switch(month) {
-			case 2: 
-				date = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) ? date29 : date28;
-			case 4: case 6: case 9: case 11: date = date30;
-			default: date = date31;			
-		}
-		
-		return year + "-" + month + "-" + date;
+		return "";
 	}
 	
-	public String makeBirthday() { return myCalendar(1970, 2000); }
-	
-	public String makeRegdate() { return myCalendar(2019, 2020); }
-	
 	public User makeUser() {
-		return new User(makeName(), makeUsername(), makeEmail(), makeGender(), makeBirthday(), makeRegdate(), "1"); 
+		
+		return null;
 	}
 }

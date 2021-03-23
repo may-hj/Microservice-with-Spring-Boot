@@ -106,7 +106,5 @@ public class DummyGenerator {
 	
 	public String makeRegdate() { return myCalendar(2019, 2020); }
 	
-	public User makeUser() {
-		return new User(makeName(), makeUsername(), makeEmail(), makeGender(), makeBirthday(), makeRegdate(), "1"); 
-	}
+	public User makeUser() { return new User(); }
 }
