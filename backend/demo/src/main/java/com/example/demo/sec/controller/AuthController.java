@@ -3,21 +3,29 @@ package com.example.demo.sec.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.cmm.util.Proxy;
+
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins="*")
-public class AuthController {
+public class AuthController extends Proxy{
 	
 	@GetMapping("/insertMany")
-	public Map<String, Object> login() {
-		System.out.println("insertMany µé¾î¿È");
+	public ResponseEntity<Map<String, Object>> login() {
+		print.accept("insertMany µé¾î¿È");
+		
 		Map<String, Object> map = new HashMap<>();
 		map.put("data", "success");
-		return map;
+		
+		return new ResponseEntity<>(map, HttpStatus.OK);
 	}
+	
+	
 }

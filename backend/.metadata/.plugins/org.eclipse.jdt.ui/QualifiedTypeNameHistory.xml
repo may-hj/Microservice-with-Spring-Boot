@@ -13,9 +13,21 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.example.demo.uss.domain.User"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="lombok.Builder"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.example.demo.sec.service.AuthService"/>
     <fullyQualifiedTypeName name="com.example.demo.cmm.util.Proxy"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.domain.UserDto"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.repository.UserCustomRepository"/>
+    <fullyQualifiedTypeName name="com.example.demo.bbs.domain.Board"/>
+    <fullyQualifiedTypeName name="com.example.demo.cmm.service.AbstractService"/>
+    <fullyQualifiedTypeName name="com.example.demo.bbs.domain.Article"/>
 </qualifiedTypeNameHistroy>

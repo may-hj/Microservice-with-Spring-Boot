@@ -10,8 +10,16 @@ import lombok.Data;
 public class UserDto implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private long userNo;
-	private String userid;
-	private String passwd;
 	private String username;
-	private String email;
+    private String password;
+    private String authority;
+    private boolean enabled;
+    private String name;
+    private String email;
+    private String birthday;
+    private String gender;
+    private boolean accountNonExpire;
+    private boolean accountNonLocked;
+    private boolean credentialsNonExpired;
+    private boolean accountNonExpired;
 }
